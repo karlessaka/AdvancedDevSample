@@ -1,0 +1,18 @@
+site_name: Documentation AdvancedDevSample
+site_description: Documentation technique du projet Clean Architecture
+theme:
+  name: material
+  palette: 
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.tabs
+    - content.code.copy
+
+# Configuration pour les diagrammes
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
